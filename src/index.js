@@ -1,7 +1,7 @@
-import DragSort from './drag-sort';
-import DragSortItem from './drag-sort-item';
+import DragSort from './drag-sort'
+import DragSortItem from './drag-sort-item'
 
-DragSort.Item = DragSortItem;
+DragSort.Item = DragSortItem
 
-export default DragSort;
+export default DragSort
 

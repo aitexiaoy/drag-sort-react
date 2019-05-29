@@ -18,13 +18,6 @@ module.exports = {
         es6: true,
         embertest: true
     },
-    settings: {
-        'import/resolver': {
-            webpack: {
-                config: './build/webpack.config.js'
-            },
-        }
-    },
     plugins: [
         'react',
         'jsdoc'

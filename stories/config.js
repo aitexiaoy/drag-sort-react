@@ -1,6 +1,44 @@
 
-import { themes } from '@storybook/theming';
+import { themes,create} from '@storybook/theming';
 import { addParameters, configure } from '@storybook/react';
+
+import {  } from '@storybook/theming';
+
+const myThems= create({
+  base: 'light',
+
+  colorPrimary: 'hotpink',
+  colorSecondary: 'deepskyblue',
+
+  // UI
+  appBg: '#eee',
+  appContentBg: 'silver',
+  appBorderColor: 'grey',
+  appBorderRadius: 4,
+
+  // Typography
+  fontBase: '"Open Sans", sans-serif',
+  fontCode: 'monospace',
+
+  // Text colors
+  textColor: '#fff',
+  textInverseColor: 'rgba(255,255,255,0.9)',
+
+  // Toolbar default and active colors
+  barTextColor: 'silver',
+  barSelectedColor: '#fff',
+  barBg: 'hotpink',
+
+  // Form colors
+  inputBg: '#eee',
+  inputBorder: 'silver',
+  inputTextColor: '#fff',
+  inputBorderRadius: 4,
+
+  brandTitle: 'My custom storybook',
+  brandUrl: 'https://example.com',
+  brandImage: 'https://placehold.it/350x150',
+});
 
 // Option defaults:
 addParameters({
@@ -66,6 +104,6 @@ addParameters({
     /**
      * theme storybook, see link below
      */
-    theme: themes.dark,
+    theme: myThems,
   },
 });

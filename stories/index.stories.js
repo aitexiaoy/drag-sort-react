@@ -8,7 +8,13 @@ import './index.stories.scss'
 storiesOf('拖放组件', module)
   .add('demo1', () => {
     const DragSortItem=DragSort.Item
-    return (<DragSort className="demo-1">
+    const handleChange=(r)=>{
+      console.log('输出新的排序结果:',r)
+    }
+    return (<DragSort 
+      className="demo-1"
+      onChange={handleChange}
+    >
       {
         testData.map(item=>(<DragSortItem 
           className="drag-item"
@@ -20,7 +26,10 @@ storiesOf('拖放组件', module)
   })
   .add('demo2',()=>{
     const DragSortItem=DragSort.Item
-    return (<DragSort className="demo-2">
+    const handleChange=(r)=>{
+      console.log('-----------',r)
+    }
+    return (<DragSort className="demo-2"    onChange={handleChange}>
       {
         testData.map(item=>(<DragSortItem 
           className="drag-item"
