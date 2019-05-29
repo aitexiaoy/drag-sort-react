@@ -1,0 +1,22 @@
+.demo-1{
+    .drag-item{
+        color: #fff;
+        width: 400px;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid red; 
+    }
+}
+
+.demo-2{
+    display: flex;
+    align-items: center;
+    .drag-item{
+        color: #fff;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 20px;
+        border: 1px solid red; 
+    }
+}
