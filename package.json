@@ -19,8 +19,14 @@
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "sass-loader": "^7.1.0"
+    "react-dom": "^16.8.6"
+  },
+  "keywords":[
+    "react","drag","sort"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aitexiaoy/drag-sort-react"
   },
   "babel": {
     "plugins": [
@@ -44,8 +50,15 @@
     "@storybook/react": "^5.0.11",
     "babel-loader": "^8.0.6",
     "cross-env": "^5.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
     "path": "^0.12.7",
     "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"

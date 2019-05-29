@@ -4,7 +4,7 @@ import { PureComponent, PropTypes } from "../libs"
 export default class DragSortItem extends PureComponent {
     constructor(props) {
         super(props)
-        this.node = null
+        this.node = null 
     }
 
     componentDidMount() {
